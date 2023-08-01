@@ -1,19 +1,19 @@
 #!/usr/bin/env bash
 #fizzbuzz stuf
 
-cnt=1
-while [ $cnt -ne 101 ]
+cont=1
+while [ $cont -ne 101 ]
 do
-    if [ $((cnt % 15)) -eq 0 ]
+    if [ $((cont % 15)) -eq 0 ]
     then
 	echo "FizzBuzz"
-    elif [ $((cnt % 3)) -eq 0 ]
+    elif [ $((cont % 3)) -eq 0 ]
     then
 	echo "Fizz"
-    elif [ $((cnt % 5)) -eq 0 ]
+    elif [ $((cont % 5)) -eq 0 ]
     then
         echo "Buzz"
     else
-	echo $cnt
+	echo $cont
     fi
-    ((cnt++)
+    ((cont++))
