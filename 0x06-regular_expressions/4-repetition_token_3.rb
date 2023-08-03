@@ -1,3 +1,2 @@
 #!/usr/bin/env ruby
-argument = ARGV[0]
-puts argument.scan(/hb(t*)n/).join
+puts ARGV[0].scan(/hbt*n/).join
