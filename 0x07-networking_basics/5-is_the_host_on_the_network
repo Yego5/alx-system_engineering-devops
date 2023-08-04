@@ -5,5 +5,5 @@
 if [ "$1" ]; then
     ping -c 5 "$1"
 else
-    echo "Usage: $(hostname "$0") {IP_ADDRESS}"
+    echo "Usage: $(basename "$0") {IP_ADDRESS}"
 fi
