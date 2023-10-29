@@ -1,5 +1,7 @@
 0x09. Web infrastructure design
 
+Redo
+
 Concepts
 For this project, we expect you to look at these concepts:
 
