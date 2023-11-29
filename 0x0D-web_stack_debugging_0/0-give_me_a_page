@@ -1,5 +1,6 @@
 # creates a file in /tmp
-file { '/temp/school':
+file { '/temp/school' :
+	path    => '/tmp/schoo',
 	content => 'I love puppet',
 	mode 	=> '0744',
 	owner 	=> 'www-data',
