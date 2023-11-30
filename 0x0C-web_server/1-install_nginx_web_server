@@ -1,9 +1,14 @@
 #!/usr/bin/env bash
 # install nginx on my server ubuntu@100.26.214.164
 
-sudo apt update
-sudo apt upgrade -y
+sudo apt-get  update -y
+sudo apt-get install nginx -y
 
-sudo apt-get -y install nginx
-echo 'Hello World!' > /var/www/html/index.nginx-debian.html
-sudo service nginx restart
+# allowing nginx on firewall
+ufw allow 'Nginx HTTP'
+
+# Creating new index
+echo "Hello World!" > /var/www/html/index.nginx-debian.html
+
+# Starting nginx
+sudo service nginx start
